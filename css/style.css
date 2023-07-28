@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+section.box .container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+section.box .container .r-box {
+    position: relative;
+    top: 60px;
+    max-width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    margin: 0px auto;
+    border-radius: 8px;
+}
+
+section.box .container .r-box .header {
+    width: 100%;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+section.box .container .r-box .header .header-70 {
+    width: 70%
+}
+
+section.box .container .r-box .header .header-30 {
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+section.box .container .r-box .doc-date {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+section.box .container .r-box .doc-date .date-35 {
+    width: 35%
+}
+
+section.box .container .r-box .doc-date .date-30 {
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+section.box .container .r-box .doc-date .date-35:nth-of-type(2) {
+    border-left: 1px solid black;
+}
+
+section.box .container .r-box .personal-info {
+    width: 100%;
+    display: flex;
+}
+
+section.box .container .r-box .personal-info .infos-70 {
+    width: 70%;
+    border-bottom: 1px solid black;
+}
+
+section.box .container .r-box .personal-info .infos-30 {
+    width: 30%;
+    border-left: 1px solid black;
+}
+
+section.box .container .r-box .main-title {
+    width: 100%;
+    display: flex;
+}
+
+section.box .container .r-box .main-title .title-10 {
+    width: 10%;
+}
+
+section.box .container .r-box .main-title .title-40 {
+    width: 40%;
+}
+
+section.box .container .r-box .title-main {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+section.box .container .r-box .title-main h2 {
+    text-align: center;
+}
+
+section.box .container .r-box .three-names {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
+}
+
+section.box .container .r-box .three-names .name-35 {
+    width: 35%;
+}
+
+section.box .container .r-box .three-names .name-30 {
+    width: 30%;
+}
+
+
