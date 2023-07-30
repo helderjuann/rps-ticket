@@ -93,10 +93,10 @@
         }
         </style>
         <div class=container-title>
-          <h1>EstetPARK</h1>
-          <h2>CNPJ 37.641.716/0001-88</h2>
-          <p>Rua Nossa Senhora das Mercês, 613</p>
-          <p>(11) 99365-0051 - (11) 94019-4019</p>
+          <h1>Nome Estacionamento</h1>
+          <h2>CNPJ</h2>
+          <p>Endereço Estacionamento</p>
+          <p>Telefone Estacionamento</p>
         </div>
         <div class=container-subtitle>
           <h1>Recibo de Serviços</h1>
