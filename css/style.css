@@ -7,268 +7,109 @@
 
 html, body {
     height: 100%;
+    background-color: #4b4b4b;
 }
 
-section.box .container {
-    max-width: 1280px;
+h2 {
+    font-size: 18px;
+    width: 100%;
+    max-width: 700px;
+    background-color: #70877F;
+    text-align: center;
+    margin: 8px auto;
+    color: white;
+    padding: 3px;
+}
+
+input {
+    font-size: 14px;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    max-width: 750px;
     margin: 0 auto;
+    padding: 10px 2%;
 }
 
-section.box .container .r-box {
-    position: relative;
-    top: 60px;
+.input-full {
     width: 100%;
-    max-width: 550px;
-    height: auto;
-    border: 2px solid black;
-    margin: 0px auto;
-    border-radius: 8px;
-}
-
-section.box .container .r-box .header {
-    width: 100%;
-    border-bottom: 1px solid black;
-    display: flex;
-}
-
-section.box .container .r-box .header .header-70 {
-    width: 70%;
-    padding: 5px;
-}
-
-section.box .container .r-box .header .header-30 {
-    width: 30%;
-    border-left: 1px solid black;
-    text-align: center;
-    padding: 5px;
-    font-weight: bold;
-}
-
-section.box .container .r-box .doc-date {
-    width: 100%;
-    display: flex;
-    border-bottom: 1px solid black;
-}
-
-section.box .container .r-box .doc-date .date-35 {
-    width: 35%;
-    text-align: center;
-    padding: 10px;
-}
-
-section.box .container .r-box .doc-date .date-35 h2 {
-    font-size: 14px;
-}
-
-section.box .container .r-box .doc-date .date-35 p {
-    font-size: 13px;
-    font-weight: bold;
-}
-
-section.box .container .r-box .doc-date .date-35 .datealign {
-    position: relative;
-    top: 10px;
-}
-
-section.box .container .r-box .doc-date .date-30 {
-    width: 30%;
-    border-left: 1px solid black;
-    padding: 5px;
-}
-
-section.box .container .r-box .doc-date .date-30 p {
-    font-size: 14px;
-    text-align: center;
-}
-
-section.box .container .r-box .doc-date .date-30 p:first-of-type {
-    font-weight: bold;
-}
-
-section.box .container .r-box .doc-date .date-35:nth-of-type(2) {
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .personal-info {
-    width: 100%;
-    display: flex;
-}
-
-section.box .container .r-box .personal-info .infos-100 {
-    width: 100%;
-    border-bottom: 1px solid black;
-    padding: 5px;
-}
-
-section.box .container .r-box .personal-info .infos-100 p {
-    font-size: 13px;
-}
-
-section.box .container .r-box .main-title {
-    width: 100%;
-    display: flex;
-}
-
-section.box .container .r-box .main-title .title-50 {
-    width: 50%;
-    padding: 10px;
-}
-
-section.box .container .r-box .main-title .title-50 .h2border {
-    border: 1px solid black;
-    text-align: center;
-    font-size: 20px;
-    width: 50%;
-    position: relative;
-    left: 50px;
-}
-
-section.box .container .r-box .main-title .title-50 h2 {
-    font-size: 15px;
-    font-weight: bold;
-}
-
-section.box .container .r-box .title-main {
-    width: 100%;
+    padding: 11px 34px;
     display: inline-block;
-    border-bottom: 1px solid black;
-    padding: 5px;
-}
-
-section.box .container .r-box .title-main h2 {
     text-align: center;
-    font-size: 15px;
+    border: 2px solid  black;
+    background-color: white;
 }
 
-section.box .container .r-box .three-names {
+.input-full input {
     width: 100%;
-    display: flex;
-    border-bottom: 1px solid black;
+    max-width: 700px;
+    padding: 8px;
+    margin: 2px;
+    border: 1px solid #2F2963;
 }
 
-section.box .container .r-box .three-names h2 {
-    font-size: 15px;
-    text-align: center;
-    padding: 5px;
+.input-full input:focus {
+    outline: 0;
 }
 
-section.box .container .r-box .three-names .name-35 {
-    width: 35%;
+.input-full .input-header, .input-full .input-names, 
+.input-full .input-description, .input-full .text-wrapper, 
+.input-full .input-button button {
+    margin: 8px auto;
 }
 
-section.box .container .r-box .three-names .name-35:nth-of-type(2) {
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .three-names .name-30 {
-    width: 30%;
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .mark {
+.input-full .input-button {
     width: 100%;
-    display: flex;
-    border-bottom: 1px solid black;
 }
 
-section.box .container .r-box .mark h2 {
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
-}
-
-section.box .container .r-box .mark .mark-35 {
-    width: 35%;
-}
-
-section.box .container .r-box .mark .mark-35:nth-of-type(2) {
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .mark .mark-30 {
-    width: 30%;
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .licence {
+.input-full .input-button button {
+    color: white;
     width: 100%;
-    display: flex;
-    border-bottom: 1px solid black;
-}
-
-section.box .container .r-box .licence h2 {
-    font-size: 18px;
-    text-align: center;
-    padding: 5px;
-}
-
-section.box .container .r-box .licence-35 {
-    width: 35%;
-}
-
-section.box .container .r-box .licence-35:nth-of-type(2) {
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .licence-30 {
-    width: 30%;
-    border-left: 1px solid black;
-}
-
-section.box .container .r-box .total {
-    border-top: 1px solid black;
-}
-
-section.box .container .r-box .veralign {
-    position: relative;
-    top: 15px;
-}
-
-section.box .container .r-box .desc {
-    width: 100%;
-    display: flex;
-    padding: 5px;
-}
-
-section.box .container .r-box .desc .desc-text h2 {
-    font-size: 15px;
-}
-
-section.box .container .r-box .desc .desc-text p {
+    max-width: 700px;
+    padding: 8px;
+    background-color: #454372;
+    border: 0;
+    cursor: pointer;
+    border: 2px solid #2F2963;
+    transition: 250ms ease-in-out;
     font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
-@media screen and (max-width:500px) {
-
-    section.box .container .r-box .doc-date .date-35 h2 {
-        font-size: 10px;
-    }
-
-    section.box .container .r-box .doc-date .date-35 .datealign {
-        position: relative;
-        top: 17px;
-    }
-
-    section.box .container .r-box .doc-date .date-30 p {
-        font-size: 12px;
-        text-align: center;
-    }
+.input-full .input-button button:hover {
+    background-color: #2F2963;
 }
 
-@media screen and (max-width:430px) {
-
-    section.box .container .r-box .doc-date .date-35 p {
-        font-size: 12px;
-    }
-
-    section.box .container .r-box .main-title .title-50 {
-        display: none;
-    }
-
-    section.box .container .r-box .mark h2 {
-        font-size: 12px;
-        text-align: center;
-        padding: 5px;
-    }
+.input-full .text-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
+.input-full .text-wrapper select {
+    flex-direction: column;
+    display: flex;
+    padding: 8px;
+    margin: 4px 2px;
+    border: 1px solid #2F2963;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.input-full .text-wrapper select:focus {
+    outline: 0;
+}
+
+.input-full .text-wrapper select::-ms-expand {
+    display: none;
+}
