@@ -25,6 +25,10 @@ input {
     font-size: 14px;
 }
 
+input::placeholder {
+    text-transform: none;
+}
+
 input:focus::placeholder {
     color: transparent;
 }
@@ -112,4 +116,8 @@ input:focus::placeholder {
 
 .input-full .text-wrapper select::-ms-expand {
     display: none;
+}
+
+.input-full .licence, .input-full .cname {
+    text-transform: uppercase;
 }
