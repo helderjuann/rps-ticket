@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="description" content="Recibo para Prestação de Serviço do 
-    estacionamento">
+    estacionamento EstetPARK">
     <meta name="keywords" content="palavras,separadas,por,virgula">
     <meta name="author" content="Helder Juan">
     <meta name="viewport" content="
     width=device-width,initial-scale=1.0,maximum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>RPS - Estacionamento</title>
+    <title>RPS - EstetPARK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -20,43 +20,41 @@
     <section class="ticket-form">
         <div class="container">
             <div class="input-full">
-                <div class="input-header">
-                    <h2>Tipo</h2>
-                    <input type="text" id="ticketType" placeholder="Tipo de Recibo" autocomplete="off"/>
-                </div><!-- input-header -->
+                <div class="input-header"></div><!-- input-header -->
                 <div class="input-names">
                     <h2>Nome</h2>
-                    <input type="text" id="nameClient" placeholder="Nome" autocomplete="off"/>
+                    <input type="text" id="nameClient" placeholder="Nome" autocomplete="off" maxlength="40"/>
                     <h2>Endereço</h2>
-                    <input type="text" id="addressName" placeholder="Endereço" autocomplete="off"/>
+                    <input type="text" id="addressName" placeholder="Endereço" autocomplete="off" maxlength="37"/>
                     <h2>Documento</h2>
-                    <input type="text" id="docFPJ" placeholder="CPF/CNPJ" autocomplete="on"/>
+                    <input class="cpf" type="text" id="docCPF" placeholder="CPF" autocomplete="on"/>
+                    <input class="cnpj" type="text" id="docCNPJ" placeholder="CNPJ" autocomplete="on"/>
                 </div><!-- input-names -->
                 <div class="input-licence">
                     <h2>Veículo</h2>
-                    <input type="text" id="carName" placeholder="Nome do Veículo" autocomplete="off"/>
+                    <input class="cname" type="text" id="carName" placeholder="Nome do Veículo" autocomplete="off" maxlength="11"/>
                     <h2>Placa</h2>
-                    <input type="text" id="carLicence" placeholder="Placa do Veículo" autocomplete="on"/>
+                    <input class="licence" type="text" id="carLicence" placeholder="Placa do Veículo" autocomplete="on"/>
                 </div><!-- input-licence -->
                 <div class="text-wrapper">
                     <div class="input-types">
                         <h2>Tipo</h2>
                         <select name="select" id="servicesOne">
-                            <option value="" disabled selected>Serviço 01</option>
+                            <option value="-" disabled selected>Serviço 01</option>
                             <option value="Estacionamento">Estacionamento</option>
                             <option value="Guincho">Guincho</option>
                             <option value="Lavagem">Lavagem</option>
                             <option value="Mensalidade">Mensalidade</option>
                         </select>
                         <select name="select" id="servicesTwo">
-                            <option value="" disabled selected>Serviço 02</option>
+                            <option value="-" disabled selected>Serviço 02</option>
                             <option value="Estacionamento">Estacionamento</option>
                             <option value="Guincho">Guincho</option>
                             <option value="Lavagem">Lavagem</option>
                             <option value="Mensalidade">Mensalidade</option>
                         </select>
                         <select name="select" id="servicesThree">
-                            <option value="" disabled selected>Serviço 03</option>
+                            <option value="-" disabled selected>Serviço 03</option>
                             <option value="Estacionamento">Estacionamento</option>
                             <option value="Guincho">Guincho</option>
                             <option value="Lavagem">Lavagem</option>
@@ -65,24 +63,28 @@
                     </div><!-- input-types -->
                     <div class="input-price">
                         <h2>Preço</h2>
-                        <input type="text" id="priceOne" placeholder="Valor 01" autocomplete="off"/>
-                        <input type="text" id="priceTwo" placeholder="Valor 02" autocomplete="off"/>
-                        <input type="text" id="priceThree" placeholder="Valor 03" autocomplete="off"/>
+                        <input class="money" type="text" id="priceOne" placeholder="Valor 01" autocomplete="off" maxlength="7"/>
+                        <input class="money" type="text" id="priceTwo" placeholder="Valor 02" autocomplete="off" maxlength="7"/>
+                        <input class="money" type="text" id="priceThree" placeholder="Valor 03" autocomplete="off" maxlength="7"/>
                     </div><!-- input-price -->
                 </div><!-- text-wrapper -->
                 <div class="input-description">
                     <h2>Descrição</h2>
-                    <input type="text" id="descOne" placeholder="Descrição 01" autocomplete="off"/>
-                    <input type="text" id="descTwo" placeholder="Descrição 02" autocomplete="off"/>
-                    <input type="text" id="descThree" placeholder="Descrição 03" autocomplete="off"/>
+                    <input type="text" id="descOne" placeholder="Descrição 01" autocomplete="off" maxlength="50"/>
+                    <input type="text" id="descTwo" placeholder="Descrição 02" autocomplete="off" maxlength="50"/>
+                    <input type="text" id="descThree" placeholder="Descrição 03" autocomplete="off" maxlength="50"/>
                 </div><!-- input-description -->
                 <div class="input-button">
-                    <button id="printbtn">Imprimir</button>
+                    <button id="printPdf">Salvar como PDF</button>
+                    <button id="printTck">Imprimir Ticket</button>
                 </div><!-- input-button -->
             </div><!-- input-full -->
         </div><!-- container -->
     </section><!-- ticket-form -->
 </body>
 <script src="./js/jquery.js"></script>
+<script src="./js/jquery.mask.min.js"></script>
 <script src="./js/script.js"></script>
+<script src="./js/saveticket.js"></script>
+<script src="./js/savepdf.js"></script>
 </html>
