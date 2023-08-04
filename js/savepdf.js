@@ -350,13 +350,22 @@ function ticketPdf(nameClient, addressName, docCPF, docCNPJ, carName, carLicence
           </div><!-- container -->
       </section><!-- box -->
       `;
-  
+
       const ticketWindow = window.open("", "_blank");
       ticketWindow.document.write(ticketContent);
       ticketWindow.document.close();
-      ticketWindow.onload = function() {
-          ticketWindow.print();
-          ticketWindow.close();
+      ticketWindow.onload = printIf();
+      
+      function printIf() {
+        if (window.matchMedia("(any-pointer: coarse)").matches) {
+            setTimeout(function() {
+                ticketWindow.print();
+                ticketWindow.close();
+            }, 1000);
+        } else {
+                ticketWindow.print();
+                ticketWindow.close(); 
+        }
       };
   }
   
