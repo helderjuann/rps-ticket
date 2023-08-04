@@ -46,7 +46,7 @@ input:focus::placeholder {
 
 .input-full {
     width: 100%;
-    padding: 11px 34px;
+    padding: 11px 20px;
     display: inline-block;
     text-align: center;
     border: 2px solid  black;
