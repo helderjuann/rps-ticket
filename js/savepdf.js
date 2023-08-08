@@ -361,7 +361,7 @@ function ticketPdf(nameClient, addressName, docCPF, docCNPJ, carName, carLicence
       </section><!-- box -->
       `;
 
-      const ticketWindow = window.open("", "_blank");
+      const ticketWindow = window.open("ticketContent", "_blank");
       ticketWindow.document.write(ticketContent);
       ticketWindow.document.close();
       ticketWindow.onload = printIf();
